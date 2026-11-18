@@ -164,7 +164,7 @@ jobs:
       matrix:
         include:
           - { arch: x86_64, os: macos-26-intel, target: x86_64-apple-darwin, flutter: "3.24.5", bridge: bridge-artifact, build-args: "" }
-          - { arch: aarch64, os: macos-26, target: aarch64-apple-darwin, flutter: "3.44.9", bridge: bridge-artifact-flutter-3.44, build-args: "--screencapturekit" }
+          - { arch: aarch64, os: macos-15,target: aarch64-apple-darwin, flutter: "3.44.9", bridge: bridge-artifact-flutter-3.44, build-args: "--screencapturekit" }
     steps:
       - uses: actions/github-script@d7906e4ad0b1822421a7e6a35d5ca353c962f410 # v6
         with:
